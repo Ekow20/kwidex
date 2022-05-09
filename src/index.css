@@ -11,3 +11,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.btnSmall{
+  @apply  py-2 px-4 text-sm  rounded-3xl text-white hover:opacity-100 opacity-95
+}
+.btnBig{
+  @apply py-3 px-7 rounded-3xl text-white hover:opacity-100 opacity-95
+}
+.input{
+  @apply px-1 py-3 bg-[#D6EEE0] border-2 border-transparent  focus:outline-none 
+   focus:border-green-500 rounded w-full
+}

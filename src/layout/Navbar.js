@@ -7,7 +7,7 @@ import project from "../assets/HomeSvgs/project.svg";
 import avatar from "../assets/HomeSvgs/avatar.svg";
 import notification from "../assets/HomeSvgs/notification.svg";
 
-const Navbar = () => {
+const Navbar = ({ setMiniSideOpen }) => {
   return (
     <div
       className="h-[8.5vh] bg-[#005C59] sticky top-0 flex
@@ -37,7 +37,8 @@ const Navbar = () => {
           <img
             src={avatar}
             alt=""
-            className="h-[32px] w-[32px] rounded-full  "
+            className="h-[32px] w-[32px] rounded-full cursor-pointer  "
+            onClick={() => setMiniSideOpen(true)}
           />
         </div>
       </div>

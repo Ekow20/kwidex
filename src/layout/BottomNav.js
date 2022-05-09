@@ -9,7 +9,7 @@ const BottomNav = () => {
   return (
     <div
       className="bg-white border-t-2 border-t-[#d5d5d5] absolute bottom-0 h-fit w-screen
-  flex items-center justify-evenly py-1"
+  flex items-center justify-evenly py-1 sm:hidden "
     >
       <NavLink text="Home" svg={home} />
       <NavLink text="Wallet" svg={wallet} />
@@ -25,6 +25,6 @@ export default BottomNav;
 const NavLink = ({ text, svg }) => (
   <div className="flex flex-col items-center">
     <img src={svg} alt="" className=" w-[20px] h-[20px] " />
-    <p>{text}</p>
+    <p className="text-xs ">{text}</p>
   </div>
 );
